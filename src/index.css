@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fff8f5;
+  --color-surface-dim: #e0d8d5;
+  --color-surface-bright: #fff8f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #faf2ee;
+  --color-surface-container: #f4ece8;
+  --color-surface-container-high: #eee7e3;
+  --color-surface-container-highest: #e9e1dd;
+  --color-on-surface: #1e1b19;
+  --color-on-surface-variant: #554336;
+  --color-inverse-surface: #33302d;
+  --color-inverse-on-surface: #f7efeb;
+  --color-outline: #887364;
+  --color-outline-variant: #dbc2b0;
+  --color-surface-tint: #904d00;
+  --color-primary: #8d4b00;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #b15f00;
+  --color-on-primary-container: #fffbff;
+  --color-inverse-primary: #ffb77d;
+  --color-secondary: #006591;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #39b8fd;
+  --color-on-secondary-container: #004666;
+  --color-tertiary: #a33900;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #cc4900;
+  --color-on-tertiary-container: #fffbff;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdcc3;
+  --color-primary-fixed-dim: #ffb77d;
+  --color-on-primary-fixed: #2f1500;
+  --color-on-primary-fixed-variant: #6e3900;
+  --color-secondary-fixed: #c9e6ff;
+  --color-secondary-fixed-dim: #89ceff;
+  --color-on-secondary-fixed: #001e2f;
+  --color-on-secondary-fixed-variant: #004c6e;
+  --color-tertiary-fixed: #ffdbce;
+  --color-tertiary-fixed-dim: #ffb599;
+  --color-on-tertiary-fixed: #370e00;
+  --color-on-tertiary-fixed-variant: #7f2b00;
+  --color-background: #fff8f5;
+  --color-on-background: #1e1b19;
+  --color-surface-variant: #e9e1dd;
+
+  --font-headline: "Anybody", "Noto Sans Malayalam", sans-serif;
+  --font-mono: "Space Mono", monospace;
+}
+
+@layer base {
+  body {
+    font-family: "Space Mono", monospace;
+    background-color: #fff8f5;
+    color: #1e1b19;
+  }
+}
+
+/* Comic typographic utility mappings matching prompt HTML */
+.font-headline-xl {
+  font-family: "Anybody", "Noto Sans Malayalam", sans-serif;
+  font-weight: 900;
+}
+.font-headline-lg, .font-headline-lg-mobile {
+  font-family: "Anybody", "Noto Sans Malayalam", sans-serif;
+  font-weight: 800;
+}
+.font-headline-md {
+  font-family: "Anybody", "Noto Sans Malayalam", sans-serif;
+  font-weight: 700;
+}
+.font-headline-sm {
+  font-family: "Anybody", "Noto Sans Malayalam", sans-serif;
+  font-weight: 700;
+}
+.font-body-lg, .font-body-md, .font-body-sm, .font-label-lg, .font-label-md, .font-label-sm {
+  font-family: "Space Mono", monospace;
+}
+
+/* Halftone dot overlays */
+.halftone-amber {
+  background-image: radial-gradient(#8d4b00 1.5px, transparent 1.5px);
+  background-size: 8px 8px;
+}
+.halftone-cyan {
+  background-image: radial-gradient(#006591 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+.halftone-tertiary {
+  background-image: radial-gradient(#a33900 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

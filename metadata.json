@@ -1,0 +1,7 @@
+{
+  "name": "Arimanihub - The Inscribed Grains",
+  "description": "Retro comic-styled rice grain inscription workshop with live camera capture, Malayalam folklore lore, custom calligraphy pens, and personal grain vault.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
